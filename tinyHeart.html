@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>爱心鱼小游戏</title>
+	<style type="text/css">
+
+		body{
+			
+			padding: 10px;
+			
+		}
+		#allBg{
+			margin: 0 auto;
+		}
+		#allBg, #allCanvas{
+			width: 800px;
+			height: 600px;
+			
+		}
+
+		#allCanvas{
+			position: relative;
+			margin: 0;
+		}
+	
+		#cvs1, #cvs2{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+		#cvs1{
+			z-index: 2
+		}
+
+		#cvs2{
+			z-index: 1
+		}
+	</style>
+</head>
+<body>
+	<div id="allBg">
+		<div id="allCanvas">
+			<canvas id="cvs1" height="600" width="800"></canvas>
+			<canvas id="cvs2" height="600" width="800"></canvas>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./js/commonFunctions.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/background.js"></script>
+	<script type="text/javascript" src="./js/ane.js"></script>
+	<script type="text/javascript" src="./js/fruit.js"></script>
+	<script type="text/javascript" src="./js/mom.js"></script>
+	<script type="text/javascript" src="./js/collision.js"></script>
+	<script type="text/javascript" src="./js/baby.js"></script>
+	<!-- <script type="text/javascript" src="./js/momBabyLenth.js"></script> -->
+
+</body>
+</html>
