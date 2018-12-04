@@ -9,6 +9,7 @@ var bigTail = []
 var babyEye = []
 var babyTail = []
 var data;
+var gameOver = false;
 
 
 document.body.onload = game;
@@ -45,7 +46,7 @@ function init(){
 	baby = new babyObj();
 	baby.init()
 
-	for (var i = 0; i < 19; i++) {
+	for (var i = 0; i < 20; i++) {
 		babyBody[i] = new Image();
 		babyBody[i].src = './src/babyFade'+ i +'.png'
 	}
@@ -88,14 +89,15 @@ function gameloop(){
 
 	baby.draw()
 	calLenMomBaby()
-	
+
 }
 
 
 function onMouseMove(e){
-	if (e.layerX || e.offSetX) {
-		mx = (e.offSetX == undefined ? e.layerX: e.offSetX )
-		my = (e.offSetY == undefined ? e.layerY: e.offSetY )
-	}
+	if (!gameOver) 
+		if (e.layerX || e.offSetX) {
+			mx = (e.offSetX == undefined ? e.layerX: e.offSetX )
+			my = (e.offSetY == undefined ? e.layerY: e.offSetY )
+		}
 
 }

@@ -47,8 +47,7 @@ babyObj.prototype.draw = function(){
 		if (this.bodyCount > 19) {
 			//game over
 			this.bodyCount = 19
-		}else{
-			this.bodyCount %= 19
+			gameOver = true
 		}
 	}
 
