@@ -8,6 +8,8 @@ var babyBody = []
 var bigTail = []
 var babyEye = []
 var babyTail = []
+var data;
+
 
 document.body.onload = game;
 
@@ -39,7 +41,7 @@ function init(){
 	mom = new momObj()
 	mom.init()
 
-
+    data = new dataObj()
 	baby = new babyObj();
 	baby.init()
 
@@ -57,6 +59,7 @@ function init(){
 		babyEye[i] = new Image()
 		babyEye[i].src = "./src/babyEye" + i + '.png'
 	}
+
 
 }
 
@@ -85,6 +88,7 @@ function gameloop(){
 
 	baby.draw()
 	calLenMomBaby()
+	
 }
 
 

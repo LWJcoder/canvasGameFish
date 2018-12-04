@@ -61,6 +61,10 @@ fruitObj.prototype.draw = function(){
 
 }
 
+fruitObj.prototype.dead = function(i){
+	this.alive[i] = false
+}
+
 
 	// fruitAlive()
 function fruitAlive(){
@@ -82,7 +86,7 @@ function sendFruit(){
 	for (let i = 0; i < fruit.num; i++) {
 		if (!fruit.alive[i]){
 			fruit.born(i)
-			console.log(i)
+			// console.log(i)
 		}
 	}
 }
